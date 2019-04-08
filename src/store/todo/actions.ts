@@ -29,3 +29,10 @@ export function addTodo(todoText: string): ITodoAction {
     text: todoText
   };
 }
+
+export function toggleTodo(todoSearchText: string): ITodoAction {
+  return {
+    type: TODO_ACTION.TOGGLE_COMPLETE,
+    text: todoSearchText
+  }
+}
